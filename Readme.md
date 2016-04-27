@@ -1,6 +1,6 @@
 # Elm Seedling
 
-![](https://raw.githubusercontent.com/splodingsocks/elm-seedling/master/hanging-elm-763308_640.jpg)
+![](https://cloud.githubusercontent.com/assets/1227109/14854535/5b2e7ee8-0c4d-11e6-8a30-b354311d1cf4.png)
 
  - `npm run build` : Builds the elm source to public/built/index.js
  - `npm run watch` : Watches elm files in src for changes, and runs `npm run build` when changes are detected
