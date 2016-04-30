@@ -5,6 +5,6 @@
  - `npm run build` : Builds the elm source to public/built/index.js
  - `npm run watch` : Watches elm files in src for changes, and runs `npm run build` when changes are detected
  - `npm run serve` : Starts up a server in the public directory, and live-reloads when public/built/*.js or public/*.css change
- - `npm start` : Runs `npm run serve` and `npm run watch` concurrently for you
+ - `npm start` : Runs `serve` and `watch` concurrently for you
 
 Bootstrap CSS (but not JS) is included.
