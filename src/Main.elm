@@ -1,39 +1,39 @@
-module Main where
+module Main (..) where
 
 import Html exposing (..)
-import Effects
 import Signal exposing (Address)
-import StartApp exposing (start)
-import Task
+import StartApp.Simple as StartApp exposing (start)
 
-type alias Model = Int
+
+type alias Model =
+  Int
+
 
 init : Model
-init = 0
+init =
+  0
+
 
 type Action
   = NoOp
 
-update : Action -> Model -> (Model, Effects.Effects Action)
+
+update : Action -> Model -> Model
 update action model =
   case action of
-    NoOp -> (model, Effects.none)
+    NoOp ->
+      model
+
 
 view : Address Action -> Model -> Html
 view address model =
-  div [] [text "Buenos dias!"]
+  div [] [ text "Buenos dias!" ]
 
-
-app : StartApp.App Model
-app = start
-  { init = (init, Effects.none)
-  , update = update
-  , view = view
-  , inputs = []
-  }
 
 main : Signal Html
-main = app.html
-
-port tasks : Signal.Signal (Task.Task Effects.Never ())
-port tasks = app.tasks
+main =
+  start
+    { model = init
+    , update = update
+    , view = view
+    }
