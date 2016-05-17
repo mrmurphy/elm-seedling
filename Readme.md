@@ -1,6 +1,6 @@
 # Elm Seedling
 
-![](https://cloud.githubusercontent.com/assets/1227109/14854535/5b2e7ee8-0c4d-11e6-8a30-b354311d1cf4.png)
+![](https://cloud.githubusercontent.com/assets/1227109/15035161/e3ec838a-123b-11e6-8d3a-ca0f4b0106c8.png)
 
 ## Quickstart
 
